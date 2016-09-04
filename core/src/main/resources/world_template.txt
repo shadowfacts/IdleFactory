@@ -1,12 +1,12 @@
 X----------X---------------------------------------------------X
-|          |                                                   |
-|          |                                                   |
-|          |                                                   |
-|          |                 |                                 |
-|          |                 |                                 |
-|          |                 |                                 |
-|          |                 |                                 |
-|          |                 |                                 |
+|          |GGGGGGGGGGGGGGGGG                                  |
+|          |GGGGGGGGGGGGGGGGG                                  |
+|          |GGGGGGGGGGGGGGGGG                                  |
+|          |GGGGGGGGGGGGGGGGG|                                 |
+|          |GGGGGGGGGGGGGGGGG|                                 |
+|          |GGGGGGGGGGGGGGGGG|                                 |
+|          |GGGGGGGGGGGGGGGGG|                                 |
+|          |GGGGGGGGGGGGGGGGG|                                 |
 |          X--------X--------X                                 |
 |                   |                                          |
 |                   |                                          |

@@ -25,6 +25,12 @@ object TileFloorFactory : TileFactory("floor", Textures.FLOOR, TileFloor::class.
 	}
 }
 
+object TileGrassFactory : TileFactory("grass", Textures.GRASS, TileGrass::class.java) {
+	override fun register() {
+		TileRegistry.register(name, this, 3)
+	}
+}
+
 object ItemTileTest : ItemTile(TileTestFactory) {
 }
 
@@ -32,7 +38,7 @@ object ItemTileWall : ItemTile(TileWallFactory) {
 }
 
 fun initTiles() {
-	arrayOf(TileTestFactory, TileWallFactory, TileFloorFactory).forEach(TileFactory::register)
+	arrayOf(TileTestFactory, TileWallFactory, TileFloorFactory, TileGrassFactory).forEach(TileFactory::register)
 
 	arrayOf(ItemTileTest, ItemTileWall).forEach(ItemDefinition::register)
 }

@@ -10,6 +10,7 @@ import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Tickable
 import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.TileFloor
+import net.shadowfacts.idlefactory.tile.TileGrass
 import net.shadowfacts.idlefactory.tile.TileWall
 import java.util.*
 
@@ -69,6 +70,8 @@ class World : Tickable, NBTSerializeable<TagCompound> {
 	private fun getTile(c: Char, world: World, pos: Pos): Tile {
 		if (c == '-' || c == '|' || c == 'X') {
 			return TileWall(world, pos, false)
+		} else if (c == 'G') {
+			return TileGrass(world, pos)
 		} else {
 			return TileFloor(world, pos)
 		}

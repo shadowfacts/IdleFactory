@@ -10,9 +10,9 @@ buildscript {
 apply plugin: "java"
 apply plugin: "kotlin"
 
-sourceCompatibility = 1.6
+sourceCompatibility = 1.8
 
-project.ext.mainClassName = "net.shadowfacts.factoryidle.desktop.DesktopLauncher"
+project.ext.mainClassName = "net.shadowfacts.idlefactory.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../core/src/main/resources");
 
 dependencies {

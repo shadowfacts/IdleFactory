@@ -17,8 +17,8 @@ gwt {
     minHeapSize="1G"
 
     src = files(file("src/main/java")) // Needs to be in front of "modules" below.
-    modules 'net.shadowfacts.factoryidle.GdxDefinition'
-    devModules 'net.shadowfacts.factoryidle.GdxDefinitionSuperdev'
+    modules 'net.shadowfacts.idlefactory.GdxDefinition'
+    devModules 'net.shadowfacts.idlefactory.GdxDefinitionSuperdev'
     project.webAppDirName = 'webapp'
 
     compiler {

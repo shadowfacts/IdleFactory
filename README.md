@@ -1,0 +1,2 @@
+# IdleFactory
+An idle game.

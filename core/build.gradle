@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+    }
+}
+
+apply plugin: "java"
+apply plugin: "kotlin"
+
+sourceCompatibility = 1.6
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+	maven {
+		name = "shadowfacts"
+		url = "http://mvn.rx14.co.uk/shadowfacts/"
+	}
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlin_version}"
+    compile group: "net.shadowfacts", name: "ShadowLib", version: shadowlib_version
+    compile group: "com.google.guava", name: "guava", version: "19.0"
+}
+
+eclipse.project {
+    name = appName + "-core"
+}

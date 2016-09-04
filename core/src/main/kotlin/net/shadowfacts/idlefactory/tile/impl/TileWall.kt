@@ -1,7 +1,9 @@
-package net.shadowfacts.idlefactory.tile
+package net.shadowfacts.idlefactory.tile.impl
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
+import net.shadowfacts.idlefactory.tile.Tile
+import net.shadowfacts.idlefactory.tile.TileWallFactory
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Side
 import net.shadowfacts.idlefactory.util.Textures

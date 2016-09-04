@@ -4,7 +4,7 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.InputProcessor
 import net.shadowfacts.idlefactory.scene.GameScene
-import net.shadowfacts.idlefactory.tile.TileTest
+import net.shadowfacts.idlefactory.tile.impl.TileTest
 
 /**
  * @author shadowfacts

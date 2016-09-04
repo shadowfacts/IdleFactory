@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import net.shadowfacts.idlefactory.nbt.NBTSerializeable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
+import net.shadowfacts.idlefactory.tile.impl.TileFloor
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.draw
 import net.shadowfacts.idlefactory.world.World

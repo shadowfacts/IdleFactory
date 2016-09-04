@@ -1,5 +1,7 @@
-package net.shadowfacts.idlefactory.tile
+package net.shadowfacts.idlefactory.tile.impl
 
+import net.shadowfacts.idlefactory.tile.Tile
+import net.shadowfacts.idlefactory.tile.TileGrassFactory
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Textures
 import net.shadowfacts.idlefactory.world.World

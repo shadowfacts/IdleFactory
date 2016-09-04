@@ -2,6 +2,10 @@ package net.shadowfacts.idlefactory.tile
 
 import net.shadowfacts.idlefactory.item.ItemDefinition
 import net.shadowfacts.idlefactory.item.ItemTile
+import net.shadowfacts.idlefactory.tile.impl.TileFloor
+import net.shadowfacts.idlefactory.tile.impl.TileGrass
+import net.shadowfacts.idlefactory.tile.impl.TileTest
+import net.shadowfacts.idlefactory.tile.impl.TileWall
 import net.shadowfacts.idlefactory.util.Textures
 
 /**

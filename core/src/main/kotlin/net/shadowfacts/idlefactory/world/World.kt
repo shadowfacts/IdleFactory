@@ -68,7 +68,7 @@ class World : Tickable, NBTSerializeable<TagCompound> {
 	}
 
 	private fun getTile(c: Char, world: World, pos: Pos): Tile {
-		if (c == '-' || c == '|' || c == 'X') {
+		if (c == '-' || c == '|' || c == '+') {
 			return TileWall(world, pos, false)
 		} else if (c == 'G') {
 			return TileGrass(world, pos)

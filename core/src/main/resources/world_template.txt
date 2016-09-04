@@ -1,64 +1,68 @@
-X----------X---------------------------------------------------X
-|          |GGGGGGGGGGGGGGGGG                                  |
-|          |GGGGGGGGGGGGGGGGG                                  |
-|          |GGGGGGGGGGGGGGGGG                                  |
-|          |GGGGGGGGGGGGGGGGG|                                 |
-|          |GGGGGGGGGGGGGGGGG|                                 |
-|          |GGGGGGGGGGGGGGGGG|                                 |
-|          |GGGGGGGGGGGGGGGGG|                                 |
-|          |GGGGGGGGGGGGGGGGG|                                 |
-|          X--------X--------X                                 |
-|                   |                                          |
-|                   |                                          |
-|                   |                                          |
-|                   |                                          |
-|                   |                                          |
-|                                       X----------------------X
-|                                       |                      |
-|                                       |                      |
-X--------                               |                      |
-|                                       |                      |
-|                                       |                      |
-|                                       |                      |
-|                       |                                      |
-|                       |                                      |
-|                       |                                      |
-|                       |                                      |
-|                       |                                      |
-|                       |                                      |
-X-----------------------X                                      |
-|                                                              |
-|                                                              |
-|                                                              |
-|                                                              |
-|                                              ----------------X
-|                                                              |
-|                                                              |
-|                                                              |
-|                                                              |
-|                                                              |
-|                                                              |
-|                                                              |
-|                    --------X                                 |
-|                            |                                 |
-|                            |                                 |
-|                            |                                 |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|            ----------------X--------------------X            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|                            |                    |            |
-|            |               |                                 |
-|            |               |                                 |
-|            |               |                                 |
-|            |               |                                 |
-|            |               |                                 |
-X------------X---------------X---------------------------------X
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+GG+----------+---------------------------------------------------+GG
+GG|          |                                                   |GG
+GG|          |                                                   |GG
+GG|          |                                                   |GG
+GG|          |                 |                                 |GG
+GG|          |                 |                                 |GG
+GG|          |                 |                                 |GG
+GG|          |                 |                                 |GG
+GG|          |                 |                                 |GG
+GG|          +-----------------+                                 |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG+------------------         ------------+----------------------+GG
+GGGGGGGGGGGGGGGGGGGGG         GGGGGGGGGGGG|                      |GG
+GGGGGGGGGGGGGGGGGGGGG         GGGGGGGGGGGG|                      |GG
+GGGGGGGGGGGGGGGGGGGGG         GGGGGGGGGGGG|                      |GG
+GGGGGGGGGGGGGGGGGGGGG         GGGGGGGGGGGG|                      |GG
+GGGGGGGGGGGGGGGGGGGGG                                            |GG
+GGGGGGGGGGGGGGGGGGGGG                                            |GG
+GG+------------------                                            |GG
+GG|                                       |                      |GG
+GG|                                       |                      |GG
+GG|                                       |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG|                 |                     |                      |GG
+GG+-----------------+                     +----------------------+GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                                                              |GG
+GG|                    --------+                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                    |            |GG
+GG|                            |                    |            |GG
+GG|                            |                    |            |GG
+GG|                            |                    |            |GG
+GG|                            |                    |            |GG
+GG|            ----------------+--------------------+            |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                                 |GG
+GG|                            |                    +------------+GG
+GG|            |               |                    |GGGGGGGGGGGGGGG
+GG|            |               |                    |GGGGGGGGGGGGGGG
+GG|            |               |                    |GGGGGGGGGGGGGGG
+GG|            |               |                    |GGGGGGGGGGGGGGG
+GG|            |               |                    |GGGGGGGGGGGGGGG
+GG+------------+---------------+--------------------+GGGGGGGGGGGGGGG
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG

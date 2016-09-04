@@ -1,6 +1,6 @@
 package net.shadowfacts.idlefactory.item
 
-import net.shadowfacts.idlefactory.tile.TileFactory
+import net.shadowfacts.idlefactory.tile.factory.TileFactory
 import net.shadowfacts.idlefactory.tile.TileRegistry
 
 /**

@@ -9,6 +9,8 @@ import net.shadowfacts.idlefactory.nbt.NBTSerializeable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.tile.*
+import net.shadowfacts.idlefactory.tile.factory.ItemTileTest
+import net.shadowfacts.idlefactory.tile.factory.ItemTileWall
 import net.shadowfacts.idlefactory.util.Textures
 
 /**

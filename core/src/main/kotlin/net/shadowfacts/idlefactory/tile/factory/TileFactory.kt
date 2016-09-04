@@ -1,8 +1,10 @@
-package net.shadowfacts.idlefactory.tile
+package net.shadowfacts.idlefactory.tile.factory
 
 import com.badlogic.gdx.graphics.Texture
 import net.shadowfacts.idlefactory.item.ItemDefinition
 import net.shadowfacts.idlefactory.item.ItemRegistry
+import net.shadowfacts.idlefactory.tile.Tile
+import net.shadowfacts.idlefactory.tile.TileRegistry
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.world.World
 import kotlin.reflect.KClass

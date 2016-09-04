@@ -11,7 +11,7 @@ import net.shadowfacts.idlefactory.item.initItems
 import net.shadowfacts.idlefactory.scene.GameScene
 import net.shadowfacts.idlefactory.scene.MenuScene
 import net.shadowfacts.idlefactory.scene.Scene
-import net.shadowfacts.idlefactory.tile.initTiles
+import net.shadowfacts.idlefactory.tile.factory.initTiles
 import net.shadowfacts.idlefactory.util.Textures
 
 object IdleFactory : ApplicationAdapter() {

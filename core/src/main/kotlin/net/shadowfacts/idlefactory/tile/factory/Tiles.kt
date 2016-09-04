@@ -1,11 +1,10 @@
-package net.shadowfacts.idlefactory.tile
+package net.shadowfacts.idlefactory.tile.factory
 
 import net.shadowfacts.idlefactory.item.ItemDefinition
 import net.shadowfacts.idlefactory.item.ItemTile
-import net.shadowfacts.idlefactory.tile.impl.TileFloor
-import net.shadowfacts.idlefactory.tile.impl.TileGrass
-import net.shadowfacts.idlefactory.tile.impl.TileTest
-import net.shadowfacts.idlefactory.tile.impl.TileWall
+import net.shadowfacts.idlefactory.tile.factory.TileFactory
+import net.shadowfacts.idlefactory.tile.TileRegistry
+import net.shadowfacts.idlefactory.tile.impl.*
 import net.shadowfacts.idlefactory.util.Textures
 
 /**

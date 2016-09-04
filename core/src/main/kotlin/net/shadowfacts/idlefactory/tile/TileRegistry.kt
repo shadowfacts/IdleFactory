@@ -2,6 +2,7 @@ package net.shadowfacts.idlefactory.tile
 
 import com.google.common.collect.BiMap
 import com.google.common.collect.HashBiMap
+import net.shadowfacts.idlefactory.tile.factory.TileFactory
 
 /**
  * @author shadowfacts

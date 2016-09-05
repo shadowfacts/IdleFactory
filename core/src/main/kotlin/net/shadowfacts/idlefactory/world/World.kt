@@ -128,6 +128,7 @@ class World : Tickable, NBTSerializeable<TagCompound> {
 	override fun tick() {
 		tiles.forEach {
 			it.forEach {
+				it.tickComponents()
 				if (it is Tickable) {
 					it.tick()
 				}

@@ -112,7 +112,7 @@ class TagCompound(name: String, var value: MutableMap<String, Tag>) : Tag(name) 
 	}
 
 	fun getTagCompound(key: String): TagCompound? {
-		return if (hasTag(key)) this[key]!!.get() as TagCompound else null
+		return if (hasTag(key)) this[key]!! as TagCompound else null
 	}
 
 	operator fun set(key: String, value: TagCompound) {

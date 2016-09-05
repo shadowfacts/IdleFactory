@@ -17,7 +17,9 @@ abstract class TileFactory(val name: String, val texture: Texture, val clazz: Cl
 	abstract fun register()
 
 	fun createTile(world: World, pos: Pos): Tile {
-		return clazz.getConstructor(World::class.java, Pos::class.java).newInstance(world, pos)
+		val tile = clazz.getConstructor(World::class.java, Pos::class.java).newInstance(world, pos)
+		tile.initComponents()
+		return tile
 	}
 
 	fun getItemDefinition(): ItemDefinition? {

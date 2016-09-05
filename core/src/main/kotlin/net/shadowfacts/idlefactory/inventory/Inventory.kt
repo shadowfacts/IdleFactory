@@ -1,4 +1,4 @@
-package net.shadowfacts.idlefactory.util
+package net.shadowfacts.idlefactory.inventory
 
 import net.shadowfacts.idlefactory.item.Stack
 import net.shadowfacts.idlefactory.nbt.NBTSerializeable

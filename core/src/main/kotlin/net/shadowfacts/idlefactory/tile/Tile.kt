@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.ecs.ComponentProvider
 import net.shadowfacts.idlefactory.ecs.SimpleComponentProvider
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.tile.factory.TileFactory
 import net.shadowfacts.idlefactory.tile.impl.TileFloor
@@ -16,7 +16,7 @@ import net.shadowfacts.idlefactory.world.World
 /**
  * @author shadowfacts
  */
-abstract class Tile(val factory: TileFactory, val world: World, val pos: Pos, val texture: Texture, val rotation: Float = 0f) : NBTSerializeable<TagCompound>, ComponentProvider {
+abstract class Tile(val factory: TileFactory, val world: World, val pos: Pos, val texture: Texture, val rotation: Float = 0f) : NBTSerializable<TagCompound>, ComponentProvider {
 
 	protected val components = SimpleComponentProvider()
 

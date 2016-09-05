@@ -1,13 +1,13 @@
 package net.shadowfacts.idlefactory.player.tool
 
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.player.Player
 
 /**
  * @author shadowfacts
  */
-class ToolManager(val player: Player) : NBTSerializeable<TagCompound> {
+class ToolManager(val player: Player) : NBTSerializable<TagCompound> {
 
 	private var tools: Array<Tool> = arrayOf(ToolSelector, ToolPlace, ToolRemove)
 

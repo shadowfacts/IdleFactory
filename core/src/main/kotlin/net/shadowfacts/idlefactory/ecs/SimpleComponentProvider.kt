@@ -53,7 +53,7 @@ class SimpleComponentProvider : ComponentProvider {
 			val sideTag = TagCompound(side.name)
 
 			for ((clazz, it) in map) {
-				if (it is ComponentSerializeable<*>) {
+				if (it is ComponentSerializable<*>) {
 					sideTag[clazz.name] = it.serializeNBT()
 				}
 			}
@@ -69,7 +69,7 @@ class SimpleComponentProvider : ComponentProvider {
 				val sideTag = tag.getTagCompound(side.name)!!
 
 				for ((clazz, it) in map) {
-					if (it is ComponentSerializeable<*> && sideTag.hasTag(clazz.name)) {
+					if (it is ComponentSerializable<*> && sideTag.hasTag(clazz.name)) {
 						it.deserializeNBT(sideTag.getTag(clazz.name)!!)
 					}
 				}

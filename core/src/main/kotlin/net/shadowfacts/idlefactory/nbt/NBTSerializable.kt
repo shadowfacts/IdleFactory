@@ -3,7 +3,7 @@ package net.shadowfacts.idlefactory.nbt
 /**
  * @author shadowfacts
  */
-interface NBTSerializeable<T : Tag> {
+interface NBTSerializable<T : Tag> {
 
 	fun serializeNBT(tag: T): T
 

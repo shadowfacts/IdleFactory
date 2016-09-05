@@ -2,7 +2,7 @@ package net.shadowfacts.idlefactory.world
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.math.Vector3
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.scene.GameScene
@@ -17,7 +17,7 @@ import java.util.*
 /**
  * @author shadowfacts
  */
-class World : Tickable, NBTSerializeable<TagCompound> {
+class World : Tickable, NBTSerializable<TagCompound> {
 
 	val tiles: Array<Array<Tile>>
 

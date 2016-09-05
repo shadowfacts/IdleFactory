@@ -5,7 +5,7 @@ import net.shadowfacts.idlefactory.nbt.Tag
 /**
  * @author shadowfacts
  */
-interface ComponentSerializeable<T : Tag> {
+interface ComponentSerializable<T : Tag> {
 
 	fun serializeNBT(): T
 

@@ -1,12 +1,12 @@
 package net.shadowfacts.idlefactory.item
 
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 
 /**
  * @author shadowfacts
  */
-data class Stack(val type: ItemDefinition, val amount: Int) : NBTSerializeable<TagCompound> {
+data class Stack(val type: ItemDefinition, val amount: Int) : NBTSerializable<TagCompound> {
 
 	fun incrementStackSize(amount: Int): Stack {
 		return Stack(type, this.amount + amount)

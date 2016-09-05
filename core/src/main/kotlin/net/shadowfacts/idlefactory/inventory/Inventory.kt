@@ -1,14 +1,14 @@
 package net.shadowfacts.idlefactory.inventory
 
 import net.shadowfacts.idlefactory.item.Stack
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 
 /**
  * @author shadowfacts
  */
-interface Inventory : Iterable<Stack?>, NBTSerializeable<TagList> {
+interface Inventory : Iterable<Stack?>, NBTSerializable<TagList> {
 
 	fun getSize(): Int
 

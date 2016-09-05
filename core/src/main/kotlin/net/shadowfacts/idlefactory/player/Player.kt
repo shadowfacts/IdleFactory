@@ -5,7 +5,7 @@ import net.shadowfacts.idlefactory.item.ItemIngotIron
 import net.shadowfacts.idlefactory.item.ItemTile
 import net.shadowfacts.idlefactory.item.ItemOreIron
 import net.shadowfacts.idlefactory.item.Stack
-import net.shadowfacts.idlefactory.nbt.NBTSerializeable
+import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.tile.*
@@ -16,7 +16,7 @@ import net.shadowfacts.idlefactory.util.Textures
 /**
  * @author shadowfacts
  */
-class Player : NBTSerializeable<TagCompound> {
+class Player : NBTSerializable<TagCompound> {
 
 	val inventory = PlayerInventory(this)
 	val tools = ToolManager(this)

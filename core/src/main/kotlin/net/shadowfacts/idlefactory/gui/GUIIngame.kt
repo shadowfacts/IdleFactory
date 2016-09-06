@@ -1,5 +1,6 @@
 package net.shadowfacts.idlefactory.gui
 
+import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.GlyphLayout
@@ -26,6 +27,11 @@ class GUIIngame : GUI {
 		tool.drawOverlay(GameScene.world!!, batch, shapeRenderer)
 
 		ToolSelector.drawSelectedTile()
+
+		batch.begin()
+		IdleFactory.font!!.draw(batch, Gdx.graphics.framesPerSecond.toString(), 0f, Gdx.graphics.height.toFloat())
+		IdleFactory.font!!.draw(batch, GameScene.player!!.money.toString(), 0f, Gdx.graphics.height.toFloat() - 15f)
+		batch.end()
 	}
 
 	override fun handleKeyPress(keyCode: Int): Boolean {

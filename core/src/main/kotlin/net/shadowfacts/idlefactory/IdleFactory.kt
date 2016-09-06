@@ -40,18 +40,10 @@ object IdleFactory : ApplicationAdapter() {
 	}
 
 	override fun render() {
-//		if (Gdx.input.isKeyPressed(Input.Keys.X)) {
-//			System.exit(0)
-//		}
-
 		Gdx.gl.glClearColor(0f, 0f, 0f, 1f)
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
 		scene.render(Gdx.graphics.deltaTime)
-
-		batch!!.begin()
-		font!!.draw(batch!!, Gdx.graphics.framesPerSecond.toString(), 0f, Gdx.graphics.height.toFloat())
-		batch!!.end()
 	}
 
 	override fun resize(width: Int, height: Int) {

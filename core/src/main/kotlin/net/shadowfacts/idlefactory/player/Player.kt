@@ -21,6 +21,9 @@ class Player : NBTSerializable<TagCompound> {
 	val inventory = PlayerInventory(this)
 	val tools = ToolManager(this)
 
+	var money = 20000
+		private set
+
 	constructor() {
 		inventory[0] = Stack(ItemOreIron, 9)
 		inventory[1] = Stack(ItemTileTest, 1)
@@ -31,12 +34,26 @@ class Player : NBTSerializable<TagCompound> {
 	override fun serializeNBT(tag: TagCompound): TagCompound {
 		tag["inventory"] = inventory.serializeNBT(TagList("inventory"))
 		tools.serializeNBT(tag)
+		tag["money"] = money
 		return tag
 	}
 
 	override fun deserializeNBT(tag: TagCompound) {
 		inventory.deserializeNBT(tag.getTag<TagList>("inventory")!!)
 		tools.deserializeNBT(tag)
+		money = tag.getInt("money")
+	}
+
+	fun addMoney(amount: Int) {
+		money += amount
+	}
+
+	fun removeMoney(amount: Int): Boolean {
+		if (money >= amount) {
+			money -= amount
+			return true
+		}
+		return false
 	}
 
 }

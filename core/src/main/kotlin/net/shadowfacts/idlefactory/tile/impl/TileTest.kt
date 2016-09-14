@@ -4,7 +4,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.inventory.Inventory
 import net.shadowfacts.idlefactory.inventory.SimpleInventory
 import net.shadowfacts.idlefactory.item.Stack
+import net.shadowfacts.idlefactory.nbt.auto.Serialize
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
+import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.factory.ItemTileTest
 import net.shadowfacts.idlefactory.tile.factory.TileTestFactory
@@ -16,6 +18,7 @@ import net.shadowfacts.idlefactory.world.World
  */
 class TileTest(world: World, pos: Pos) : Tile(TileTestFactory, world, pos, Textures.LOGO, 0f), Tickable, TooltipProvider {
 
+	@Serialize
 	private var age = 0
 	private var inv = SimpleInventory(1)
 
@@ -44,13 +47,15 @@ class TileTest(world: World, pos: Pos) : Tile(TileTestFactory, world, pos, Textu
 
 	override fun serializeNBT(tag: TagCompound): TagCompound {
 		super.serializeNBT(tag)
-		tag["age"] = age
+		val list = TagList("inv")
+		tag["inv"] = list
+		inv.serializeNBT(list)
 		return tag
 	}
 
 	override fun deserializeNBT(tag: TagCompound) {
 		super.deserializeNBT(tag)
-		this.age = tag.getInt("age")
+		inv.deserializeNBT(tag.getTag("inv")!!)
 	}
 
 	override fun getTooltip(): List<String> {

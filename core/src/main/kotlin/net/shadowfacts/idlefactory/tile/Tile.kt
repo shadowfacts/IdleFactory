@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.ecs.ComponentProvider
 import net.shadowfacts.idlefactory.ecs.SimpleComponentProvider
 import net.shadowfacts.idlefactory.nbt.NBTSerializable
+import net.shadowfacts.idlefactory.nbt.auto.AutoSerializer
+import net.shadowfacts.idlefactory.nbt.auto.Serialize
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.tile.factory.TileFactory
 import net.shadowfacts.idlefactory.tile.impl.TileFloor
@@ -16,7 +18,7 @@ import net.shadowfacts.idlefactory.world.World
 /**
  * @author shadowfacts
  */
-abstract class Tile(val factory: TileFactory, val world: World, val pos: Pos, val texture: Texture, val rotation: Float = 0f) : NBTSerializable<TagCompound>, ComponentProvider {
+abstract class Tile(val factory: TileFactory, val world: World, @Serialize val pos: Pos, val texture: Texture, val rotation: Float = 0f) : NBTSerializable<TagCompound>, ComponentProvider {
 
 	protected val components = SimpleComponentProvider()
 
@@ -39,13 +41,14 @@ abstract class Tile(val factory: TileFactory, val world: World, val pos: Pos, va
 	}
 
 	override fun serializeNBT(tag: TagCompound): TagCompound {
+		AutoSerializer.serialize(tag, this)
 		tag["id"] = TileRegistry.getId(factory)
-		tag["pos"] = pos.toLong()
 		tag["components"] = components.serializeNBT(TagCompound("components"))
 		return tag
 	}
 
 	override fun deserializeNBT(tag: TagCompound) {
+		AutoSerializer.deserialize(tag, this)
 		components.deserializeNBT(tag.getTagCompound("components")!!)
 	}
 

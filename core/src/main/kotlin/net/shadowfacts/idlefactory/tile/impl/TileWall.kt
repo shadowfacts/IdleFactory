@@ -1,6 +1,7 @@
 package net.shadowfacts.idlefactory.tile.impl
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import net.shadowfacts.idlefactory.nbt.auto.Serialize
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.factory.TileWallFactory
@@ -14,6 +15,7 @@ import net.shadowfacts.idlefactory.world.World
  */
 class TileWall(world: World, pos: Pos, destroyable: Boolean) : Tile(TileWallFactory, world, pos, Textures.WALL_CENTER, 0f) {
 
+	@Serialize
 	var destroyable: Boolean = destroyable
 		private set
 
@@ -75,17 +77,5 @@ class TileWall(world: World, pos: Pos, destroyable: Boolean) : Tile(TileWallFact
 			super.destroy()
 		}
 	}
-
-	override fun serializeNBT(tag: TagCompound): TagCompound {
-		super.serializeNBT(tag)
-		tag["destroyable"] = destroyable
-		return tag
-	}
-
-	override fun deserializeNBT(tag: TagCompound) {
-		super.deserializeNBT(tag)
-		destroyable = tag.getBoolean("destroyable")
-	}
-
 
 }

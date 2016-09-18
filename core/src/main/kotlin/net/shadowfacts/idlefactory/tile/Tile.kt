@@ -1,6 +1,5 @@
 package net.shadowfacts.idlefactory.tile
 
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.ecs.ComponentProvider
 import net.shadowfacts.idlefactory.ecs.SimpleComponentProvider
@@ -12,13 +11,12 @@ import net.shadowfacts.idlefactory.tile.factory.TileFactory
 import net.shadowfacts.idlefactory.tile.impl.TileFloor
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Side
-import net.shadowfacts.idlefactory.util.draw
 import net.shadowfacts.idlefactory.world.World
 
 /**
  * @author shadowfacts
  */
-abstract class Tile(val factory: TileFactory, val world: World, @Serialize val pos: Pos, val texture: Texture, val rotation: Float = 0f) : NBTSerializable<TagCompound>, ComponentProvider {
+abstract class Tile(val factory: TileFactory, val world: World, @Serialize val pos: Pos, val rotation: Float = 0f) : NBTSerializable<TagCompound>, ComponentProvider {
 
 	protected val components = SimpleComponentProvider()
 
@@ -28,9 +26,7 @@ abstract class Tile(val factory: TileFactory, val world: World, @Serialize val p
 
 	}
 
-	open fun draw(batch: SpriteBatch) {
-		batch.draw(texture, pos.renderX, pos.renderY, rotation)
-	}
+	abstract fun draw(batch: SpriteBatch)
 
 	open fun destroy() {
 		world.set(pos, TileFloor(world, pos))

@@ -13,7 +13,7 @@ import net.shadowfacts.idlefactory.world.World
 /**
  * @author shadowfacts
  */
-class TileWall(world: World, pos: Pos, destroyable: Boolean) : Tile(TileWallFactory, world, pos, Textures.WALL_CENTER, 0f) {
+class TileWall(world: World, pos: Pos, destroyable: Boolean) : Tile(TileWallFactory, world, pos) {
 
 	@Serialize
 	var destroyable: Boolean = destroyable

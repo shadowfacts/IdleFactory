@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 
 	val original = Test(1, true, "test2")
 
-	println(original)
+	println("original == $original")
 
 	val tag = TagCompound("test")
 	AutoSerializer.serialize(tag, original)
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 	val new = Test()
 	AutoSerializer.deserialize(tag, new)
 
-	println(new)
+	println("new == $new")
 
 	println(original == new)
 

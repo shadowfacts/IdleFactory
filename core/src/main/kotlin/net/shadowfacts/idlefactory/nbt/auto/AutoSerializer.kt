@@ -28,7 +28,7 @@ object AutoSerializer {
 	}
 
 	fun serialize(tag: TagCompound, obj: Any) {
-		obj.javaClass.fields.filter {
+		obj.javaClass.declaredFields.filter {
 			obj.javaClass.isAnnotationPresent(Serialize::class.java) || it.isAnnotationPresent(Serialize::class.java)
 		}.filter {
 			!Modifier.isStatic(it.modifiers)
@@ -52,7 +52,7 @@ object AutoSerializer {
 	}
 
 	fun deserialize(tag: TagCompound, obj: Any) {
-		obj.javaClass.fields.filter {
+		obj.javaClass.declaredFields.filter {
 			obj.javaClass.isAnnotationPresent(Serialize::class.java) || it.isAnnotationPresent(Serialize::class.java)
 		}.filter {
 			!Modifier.isStatic(it.modifiers)

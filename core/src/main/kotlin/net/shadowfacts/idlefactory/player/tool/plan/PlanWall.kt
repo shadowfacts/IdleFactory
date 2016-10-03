@@ -1,15 +1,15 @@
 package net.shadowfacts.idlefactory.player.tool.plan
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import net.shadowfacts.idlefactory.scene.GameScene
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Side
 import net.shadowfacts.idlefactory.util.Textures
-import net.shadowfacts.idlefactory.world.World
 
 /**
  * @author shadowfacts
  */
-class PlanWall(world: World, pos: Pos) : Plan(world, pos, 0) {
+class PlanWall(pos: Pos) : Plan(pos, 0) {
 
 	override fun draw(batch: SpriteBatch) {
 		val right = connects(Side.RIGHT)
@@ -54,7 +54,7 @@ class PlanWall(world: World, pos: Pos) : Plan(world, pos, 0) {
 
 	private fun connects(side: Side): Boolean {
 		val newPos = pos.offset(side)
-		if (!world.isWithinBorder(newPos)) return false
+		if (!GameScene.world!!.isWithinBorder(newPos)) return false
 		return ToolPlanning.get(newPos) is PlanWall
 	}
 

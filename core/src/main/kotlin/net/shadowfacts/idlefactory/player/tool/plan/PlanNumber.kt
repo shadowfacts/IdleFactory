@@ -3,12 +3,11 @@ package net.shadowfacts.idlefactory.player.tool.plan
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Textures
-import net.shadowfacts.idlefactory.world.World
 
 /**
  * @author shadowfacts
  */
-class PlanNumber(number: Int, world: World, pos: Pos) : Plan(world, pos, number) {
+class PlanNumber(number: Int, pos: Pos) : Plan(pos, number) {
 
 	val texture = when (number) {
 		1 -> Textures.PLAN_1

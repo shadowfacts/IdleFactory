@@ -10,7 +10,7 @@ import net.shadowfacts.idlefactory.world.World
 /**
  * @author shadowfacts
  */
-abstract class Plan(val world: World, @Serialize val pos: Pos, @Serialize val id: Int) {
+abstract class Plan(@Serialize val pos: Pos, @Serialize val id: Int) {
 
 	abstract fun draw(batch: SpriteBatch)
 
@@ -25,11 +25,11 @@ abstract class Plan(val world: World, @Serialize val pos: Pos, @Serialize val id
 
 	companion object {
 
-		fun deserializeNBT(tag: TagCompound, world: World): Plan {
+		fun deserializeNBT(tag: TagCompound): Plan {
 			val id = tag.getInt("id")
 			val pos = Pos.fromLong(tag.getLong("pos"))
 			val factory = ToolPlanning.planFactories[id]
-			val plan = factory(world, pos)
+			val plan = factory(pos)
 			plan.deserializeNBT(tag)
 			return plan
 		}

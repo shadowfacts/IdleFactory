@@ -21,26 +21,26 @@ object ToolPlanning : Tool(Textures.TOOL_PLANNING) {
 
 	var mode = 0
 
-	val planFactories: Array<(World, Pos) -> Plan>
+	val planFactories: Array<(Pos) -> Plan>
 
 	var plans: Array<Array<Plan?>>
 		private set
 
 	init {
 		planFactories = arrayOf(
-				{ world, pos -> PlanWall(world, pos) },
-				{ world, pos -> PlanNumber(1, world, pos) },
-				{ world, pos -> PlanNumber(2, world, pos) },
-				{ world, pos -> PlanNumber(3, world, pos) },
-				{ world, pos -> PlanNumber(4, world, pos) },
-				{ world, pos -> PlanNumber(5, world, pos) }
+				{ pos -> PlanWall(pos) },
+				{ pos -> PlanNumber(1, pos) },
+				{ pos -> PlanNumber(2, pos) },
+				{ pos -> PlanNumber(3, pos) },
+				{ pos -> PlanNumber(4, pos) },
+				{ pos -> PlanNumber(5, pos) }
 		)
 
 //		val world = GameScene.world!!
 //		TODO: initialize me when the world's initialized
 		val list: MutableList<Array<Plan?>> = mutableListOf()
-		for (x in 0.until(64)) {
-			list.add(kotlin.arrayOfNulls(64))
+		for (x in 0.until(68)) {
+			list.add(kotlin.arrayOfNulls(68))
 		}
 		plans = list.toTypedArray()
 	}
@@ -64,7 +64,7 @@ object ToolPlanning : Tool(Textures.TOOL_PLANNING) {
 	override fun onLeftClick(world: World, screenX: Int, screenY: Int) {
 		val pos = world.getPosAtScreenCoords(screenX, screenY)
 		if (world.isWithinBorder(pos) && world.get(pos) is TileFloor) {
-			set(pos, planFactories[mode](world, pos))
+			set(pos, planFactories[mode](pos))
 		}
 	}
 
@@ -106,9 +106,9 @@ object ToolPlanning : Tool(Textures.TOOL_PLANNING) {
 
 	override fun serializeNBT(tag: TagCompound): TagCompound {
 		val list = TagList("x")
-		for (y in 0.until(64)) {
+		for (y in 0.until(68)) {
 			val innerList = TagList("y")
-			for (x in 0.until(64)) {
+			for (x in 0.until(68)) {
 				val plan = get(x, y)
 				val planTag = TagCompound("tile")
 				if (plan != null) {
@@ -134,9 +134,9 @@ object ToolPlanning : Tool(Textures.TOOL_PLANNING) {
 			for (y in 0.until(innerTagList.size)) {
 				val planTag = innerTagList[y] as TagCompound
 				if (!planTag.hasTag("empty")) {
-					innerList[y] = Plan.deserializeNBT(planTag, GameScene.world!!)
+					innerList.add(Plan.deserializeNBT(planTag))
 				} else {
-					innerList[y] = null
+					innerList.add(null)
 				}
 			}
 			list.add(innerList.toTypedArray())

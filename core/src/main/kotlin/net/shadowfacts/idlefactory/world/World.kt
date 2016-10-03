@@ -6,12 +6,12 @@ import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.scene.GameScene
-import net.shadowfacts.idlefactory.util.Pos
-import net.shadowfacts.idlefactory.util.Tickable
 import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.impl.TileFloor
 import net.shadowfacts.idlefactory.tile.impl.TileGrass
 import net.shadowfacts.idlefactory.tile.impl.TileWall
+import net.shadowfacts.idlefactory.util.Pos
+import net.shadowfacts.idlefactory.util.Tickable
 import java.util.*
 
 /**

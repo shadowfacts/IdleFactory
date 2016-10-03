@@ -1,17 +1,14 @@
 package net.shadowfacts.idlefactory.player
 
-import net.shadowfacts.idlefactory.player.tool.ToolManager
 import net.shadowfacts.idlefactory.item.ItemIngotIron
-import net.shadowfacts.idlefactory.item.ItemTile
 import net.shadowfacts.idlefactory.item.ItemOreIron
 import net.shadowfacts.idlefactory.item.Stack
 import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
-import net.shadowfacts.idlefactory.tile.*
+import net.shadowfacts.idlefactory.player.tool.ToolManager
 import net.shadowfacts.idlefactory.tile.factory.ItemTileTest
 import net.shadowfacts.idlefactory.tile.factory.ItemTileWall
-import net.shadowfacts.idlefactory.util.Textures
 
 /**
  * @author shadowfacts

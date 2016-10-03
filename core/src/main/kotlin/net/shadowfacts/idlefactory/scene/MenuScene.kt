@@ -9,7 +9,6 @@ import net.shadowfacts.idlefactory.IdleFactory
 import net.shadowfacts.idlefactory.gui.GUI
 import net.shadowfacts.idlefactory.gui.GUIMainMenu
 import net.shadowfacts.idlefactory.input.MainMenuInputProcessor
-import net.shadowfacts.idlefactory.util.Textures
 
 /**
  * @author shadowfacts

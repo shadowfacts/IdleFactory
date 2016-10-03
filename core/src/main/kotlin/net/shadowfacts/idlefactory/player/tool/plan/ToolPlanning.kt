@@ -4,7 +4,6 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
-import net.shadowfacts.idlefactory.nbt.impl.TagByte
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.nbt.impl.TagList
 import net.shadowfacts.idlefactory.player.tool.Tool

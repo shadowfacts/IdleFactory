@@ -10,7 +10,6 @@ import com.badlogic.gdx.math.Vector3
 import net.shadowfacts.idlefactory.IdleFactory
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.scene.GameScene
-import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.util.Textures
 import net.shadowfacts.idlefactory.util.TooltipProvider

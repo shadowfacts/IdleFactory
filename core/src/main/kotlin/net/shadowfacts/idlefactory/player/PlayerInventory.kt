@@ -1,7 +1,7 @@
 package net.shadowfacts.idlefactory.player
 
-import net.shadowfacts.idlefactory.item.Stack
 import net.shadowfacts.idlefactory.inventory.SimpleInventory
+import net.shadowfacts.idlefactory.item.Stack
 
 /**
  * @author shadowfacts

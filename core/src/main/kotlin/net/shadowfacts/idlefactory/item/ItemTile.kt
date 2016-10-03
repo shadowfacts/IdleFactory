@@ -1,7 +1,7 @@
 package net.shadowfacts.idlefactory.item
 
-import net.shadowfacts.idlefactory.tile.factory.TileFactory
 import net.shadowfacts.idlefactory.tile.TileRegistry
+import net.shadowfacts.idlefactory.tile.factory.TileFactory
 
 /**
  * @author shadowfacts

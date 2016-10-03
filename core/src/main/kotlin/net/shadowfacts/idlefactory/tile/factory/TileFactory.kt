@@ -7,7 +7,6 @@ import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.TileRegistry
 import net.shadowfacts.idlefactory.util.Pos
 import net.shadowfacts.idlefactory.world.World
-import kotlin.reflect.KClass
 
 /**
  * @author shadowfacts

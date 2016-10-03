@@ -4,10 +4,7 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.g2d.GlyphLayout
 import net.shadowfacts.idlefactory.IdleFactory
 import net.shadowfacts.idlefactory.gui.widget.WidgetButton
-import net.shadowfacts.idlefactory.gui.widget.WidgetLabel
-import net.shadowfacts.idlefactory.gui.widget.WidgetTexture
 import net.shadowfacts.idlefactory.scene.GameScene
-import net.shadowfacts.idlefactory.util.Textures
 
 /**
  * @author shadowfacts

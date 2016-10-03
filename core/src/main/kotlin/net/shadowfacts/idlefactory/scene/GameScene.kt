@@ -15,8 +15,8 @@ import net.shadowfacts.idlefactory.input.GameInputProcessor
 import net.shadowfacts.idlefactory.nbt.TagHelper
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.player.Player
-import net.shadowfacts.idlefactory.world.World
 import net.shadowfacts.idlefactory.tile.Tile
+import net.shadowfacts.idlefactory.world.World
 import java.io.File
 
 /**

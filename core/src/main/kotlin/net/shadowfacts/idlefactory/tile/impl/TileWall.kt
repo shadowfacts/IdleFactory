@@ -2,7 +2,6 @@ package net.shadowfacts.idlefactory.tile.impl
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import net.shadowfacts.idlefactory.nbt.auto.Serialize
-import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.tile.Tile
 import net.shadowfacts.idlefactory.tile.factory.TileWallFactory
 import net.shadowfacts.idlefactory.util.Pos

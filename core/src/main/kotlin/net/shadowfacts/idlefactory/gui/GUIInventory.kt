@@ -8,9 +8,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import net.shadowfacts.idlefactory.IdleFactory
 import net.shadowfacts.idlefactory.gui.widget.Widget
+import net.shadowfacts.idlefactory.item.Stack
 import net.shadowfacts.idlefactory.player.PlayerInventory
 import net.shadowfacts.idlefactory.player.tool.ToolPlace
-import net.shadowfacts.idlefactory.item.Stack
 
 /**
  * @author shadowfacts

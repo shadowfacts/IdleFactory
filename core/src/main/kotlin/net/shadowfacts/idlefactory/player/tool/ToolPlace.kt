@@ -2,12 +2,11 @@ package net.shadowfacts.idlefactory.player.tool
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.Color
-import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
-import net.shadowfacts.idlefactory.scene.GameScene
 import net.shadowfacts.idlefactory.item.ItemTile
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
+import net.shadowfacts.idlefactory.scene.GameScene
 import net.shadowfacts.idlefactory.util.Textures
 import net.shadowfacts.idlefactory.world.World
 

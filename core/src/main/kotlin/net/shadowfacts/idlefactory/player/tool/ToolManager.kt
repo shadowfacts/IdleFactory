@@ -3,16 +3,18 @@ package net.shadowfacts.idlefactory.player.tool
 import net.shadowfacts.idlefactory.nbt.NBTSerializable
 import net.shadowfacts.idlefactory.nbt.impl.TagCompound
 import net.shadowfacts.idlefactory.player.Player
+import net.shadowfacts.idlefactory.player.tool.plan.ToolPlanning
 
 /**
  * @author shadowfacts
  */
 class ToolManager(val player: Player) : NBTSerializable<TagCompound> {
 
-	private var tools: Array<Tool> = arrayOf(ToolSelector, ToolPlace, ToolRemove)
+	private var tools: Array<Tool> = arrayOf(ToolSelector, ToolPlace, ToolRemove, ToolPlanning)
 
 	var selectedTool: Int = 0
 		private set
+
 	fun onNumberKeyPressed(keyCode: Int): Boolean {
 		val num = keyCode - 8
 		if (num >= 0 && num < tools.size) {

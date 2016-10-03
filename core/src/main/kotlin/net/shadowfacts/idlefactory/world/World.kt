@@ -34,6 +34,7 @@ class World : Tickable, NBTSerializable<TagCompound> {
 	}
 
 	constructor(tag: TagCompound) {
+		@Suppress("UNCHECKED_CAST")
 		val tagList = tag.getTagList("x") as List<TagList>
 		val list = ArrayList<Array<Tile>>(tagList.size)
 		for (x in 0.until(tagList.size)) {

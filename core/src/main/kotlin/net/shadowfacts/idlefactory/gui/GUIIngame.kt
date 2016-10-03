@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import net.shadowfacts.idlefactory.IdleFactory
 import net.shadowfacts.idlefactory.gui.widget.Widget
 import net.shadowfacts.idlefactory.player.tool.ToolSelector
+import net.shadowfacts.idlefactory.player.tool.plan.ToolPlanning
 import net.shadowfacts.idlefactory.scene.GameScene
 
 /**
@@ -27,6 +28,7 @@ class GUIIngame : GUI {
 		tool.drawOverlay(GameScene.world!!, batch, shapeRenderer)
 
 		ToolSelector.drawSelectedTile()
+		ToolPlanning.drawPlans()
 
 		batch.begin()
 		IdleFactory.font!!.draw(batch, Gdx.graphics.framesPerSecond.toString(), 0f, Gdx.graphics.height.toFloat())
